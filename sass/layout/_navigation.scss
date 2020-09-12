@@ -1,4 +1,5 @@
 .navigation {
+   
     &__checkbox {
         display: none;
     }
@@ -45,7 +46,7 @@
     }
 
     &__list {
-        @include center-xy;
+        @include absoluteCenter;
         list-style: none;
         text-align: center;
         width: 100%;
