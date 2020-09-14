@@ -2,7 +2,6 @@
     
     &__group:not(:last-child) {
         margin-bottom: 2rem;
-
     }
 
     &__input {
@@ -17,6 +16,10 @@
         width: 90%;
         display: block;
         transition: border-bottom .4s;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
 
         &:focus {
             outline: none;
@@ -51,6 +54,12 @@
     &__radio-group {
         width: 45%;
         display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            display: block;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-input {
